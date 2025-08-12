@@ -12,6 +12,10 @@ int main() {
     int movimentoBispo = 5;
     int movimentoRainha = 8;
 
+    //
+    int movimentoCavalo = 2;
+    int movimentoCavaloPerpendicular = 1; 
+
     int i; // variável de controle do loop
 
     // Movimento da Torre (FOR)
@@ -35,6 +39,17 @@ int main() {
         printf("Esquerda\n");
         i++;
     } while (i <= movimentoRainha);
+
+
+    // Movimento do Cavalo (com FOR e WHILE)
+    printf("Movimento do Cavalo:\n");
+    for (i = 1; i <= movimentoCavaloPerpendicular; i++) {
+        while (i <= movimentoCavalo){
+            printf("Baixo\n");
+            i++;
+        }
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
